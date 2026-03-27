@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  {% include "partials/header.njk" %}
+  <main class="container">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        header.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
