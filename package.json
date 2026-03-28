@@ -1,5 +1,5 @@
 {
-  "name": "0cms-example-eleventy",
+  "name": "example-eleventy",
   "version": "1.0.0",
   "scripts": {
     "build": "eleventy",
